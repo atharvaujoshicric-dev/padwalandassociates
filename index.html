@@ -4,1020 +4,1012 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Padwal & Associates | Advocates &amp; Cyber Law Specialists</title>
-<meta name="description" content="Padwal & Associates — Advocates practising Civil, Criminal, Corporate, Family and Cyber Law. Specialists in Cyber Security, IT Act 2000 and DPDP Act 2023 compliance, with full-spectrum legal representation across Maharashtra.">
+<meta name="description" content="Padwal & Associates — a full-service law firm led by cyber law specialist Adv. Shantanu Padwal. Practising Cyber, Civil, Criminal, IPR, Corporate, Family and more across Maharashtra, India.">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- Favicon (inline seal mark) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230B1B2E'/%3E%3Ccircle cx='16' cy='16' r='15' fill='none' stroke='%23B68D40' stroke-width='1'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='13' fill='%23D9B872' text-anchor='middle'%3EP%26amp;A%3C/text%3E%3C/svg%3E">
+<!-- Inline SVG favicon: brass seal monogram -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230A1628'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23B8893E' text-anchor='middle'%3EPA%3C/text%3E%3C/svg%3E">
 
 <style>
-/* ============================================================
-   PADWAL & ASSOCIATES — DESIGN TOKENS
-   Palette: chambers ink-navy, brass/gold (tradition), cyber-teal (specialisation)
-   Display: Fraunces · Body: Inter · Utility/mono: IBM Plex Mono
-   ============================================================ */
-:root{
-  --ink:#0B1B2E;
-  --ink-2:#13243D;
-  --ink-3:#1C2E4A;
-  --paper:#F6F5F0;
-  --paper-2:#EFECE2;
-  --text:#1B2330;
-  --muted:#5B6472;
-  --muted-2:#808896;
-  --gold:#B68D40;
-  --gold-light:#D9B872;
-  --gold-dark:#8C6A2E;
-  --cyber:#1FB8A6;
-  --cyber-deep:#0E7C70;
-  --line:#DFDBCD;
-  --line-soft:#EAE7DA;
-  --on-ink-line: rgba(217,184,114,0.22);
-  --on-ink-muted: rgba(246,245,240,0.62);
-  --shadow-sm: 0 1px 2px rgba(11,27,46,0.06);
-  --shadow-md: 0 12px 28px rgba(11,27,46,0.10);
-  --shadow-lg: 0 24px 60px rgba(11,27,46,0.16);
-  --container: 1180px;
-  --r-sm: 2px;
-  --r-md: 4px;
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
-  --ease: cubic-bezier(.16,.8,.24,1);
-}
+  :root{
+    --ink:#0A1628;
+    --ink-2:#13243C;
+    --ink-3:#1B3050;
+    --paper:#F3F1EA;
+    --surface:#FFFFFF;
+    --charcoal:#1E2530;
+    --slate:#5C6679;
+    --slate-light:#8A93A3;
+    --brass:#B8893E;
+    --brass-light:#D4AC6E;
+    --brass-deep:#8F6A2B;
+    --signal:#1FA39A;
+    --signal-light:#5FCFC4;
+    --signal-deep:#157A73;
+    --line:rgba(10,22,40,0.12);
+    --line-dark:rgba(244,243,237,0.14);
+    --radius:3px;
+    --shadow:0 18px 40px -20px rgba(10,22,40,0.35);
+    --maxw:1180px;
+  }
 
-*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
-html{ scroll-behavior:smooth; scroll-padding-top:88px; }
-body{
-  font-family:var(--font-body);
-  color:var(--text);
-  background:var(--paper);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  font-size:16px;
-  overflow-x:hidden;
-}
-img{ max-width:100%; display:block; }
-a{ color:inherit; text-decoration:none; }
-ul{ list-style:none; }
-button{ font-family:inherit; cursor:pointer; }
-input,textarea,select{ font-family:inherit; font-size:1rem; }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important;}
+  }
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--charcoal);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;margin:0;color:var(--ink);letter-spacing:-0.01em;}
+  p{margin:0;}
+  button{font-family:inherit;}
+  .container{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  section{position:relative;}
 
-.container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 28px; }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--brass-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+    font-weight:500;
+  }
+  .eyebrow::before{
+    content:"";
+    width:26px;height:1px;background:var(--brass);
+    display:inline-block;
+  }
+  .eyebrow.on-dark{color:var(--signal-light);}
+  .eyebrow.on-dark::before{background:var(--signal);}
 
-h1,h2,h3,h4{ font-family:var(--font-display); color:var(--ink); font-weight:600; letter-spacing:-0.01em; }
-.eyebrow{
-  font-family:var(--font-mono);
-  font-size:0.74rem;
-  letter-spacing:0.16em;
-  text-transform:uppercase;
-  color:var(--cyber-deep);
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:14px;
-}
-.eyebrow::before{
-  content:"";
-  width:22px; height:1px;
-  background:var(--gold);
-  display:inline-block;
-}
-.section{ padding:108px 0; position:relative; }
-.section-head{ max-width:640px; margin-bottom:56px; }
-.section-head p{ color:var(--muted); font-size:1.05rem; margin-top:14px; }
-.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+  /* ---------- reveal on scroll ----------
+     Content is visible by default (no JS / JS failure = fully usable page).
+     JS opts an element INTO the hidden-then-fade-in state via .reveal-pre,
+     so the animation only ever degrades gracefully toward "always visible". */
+  .reveal.reveal-pre{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.reveal-pre.is-visible{opacity:1;transform:translateY(0);}
 
-/* Buttons */
-.btn{
-  display:inline-flex; align-items:center; justify-content:center; gap:10px;
-  padding:15px 30px;
-  font-size:0.92rem; font-weight:600; letter-spacing:0.02em;
-  border-radius:var(--r-sm);
-  border:1px solid transparent;
-  transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
-  white-space:nowrap;
-}
-.btn-gold{
-  background:linear-gradient(180deg,var(--gold-light),var(--gold));
-  color:var(--ink);
-  box-shadow:var(--shadow-sm);
-}
-.btn-gold:hover{ box-shadow:var(--shadow-md); transform:translateY(-2px); }
-.btn-outline{
-  background:transparent;
-  border-color:var(--on-ink-line);
-  color:#fff;
-}
-.btn-outline:hover{ border-color:var(--gold-light); background:rgba(217,184,114,0.08); }
-.btn-outline-ink{
-  background:transparent;
-  border-color:var(--line);
-  color:var(--ink);
-}
-.btn-outline-ink:hover{ border-color:var(--gold); color:var(--gold-dark); }
-.btn svg{ width:16px; height:16px; flex-shrink:0; }
+  /* ---------- focus ---------- */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:2px solid var(--signal);
+    outline-offset:3px;
+  }
 
-/* ============== HEADER ============== */
-header{
-  position:fixed; top:0; left:0; right:0; z-index:1000;
-  background:rgba(11,27,46,0.92);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid transparent;
-  transition:padding .3s var(--ease), border-color .3s var(--ease), background .3s var(--ease);
-}
-header.scrolled{ border-bottom-color:var(--on-ink-line); box-shadow:0 8px 24px rgba(0,0,0,0.18); }
-.nav-row{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:20px 0; transition:padding .3s var(--ease);
-}
-header.scrolled .nav-row{ padding:14px 0; }
-.brand{ display:flex; align-items:center; gap:13px; }
-.brand-mark{ width:42px; height:42px; flex-shrink:0; }
-.brand-text{ line-height:1.15; }
-.brand-text .name{ font-family:var(--font-display); font-size:1.18rem; color:#fff; font-weight:600; letter-spacing:0.01em; }
-.brand-text .tag{ font-family:var(--font-mono); font-size:0.62rem; letter-spacing:0.13em; color:var(--gold-light); text-transform:uppercase; margin-top:2px; }
+  /* ============ DISCLAIMER MODAL ============ */
+  .disclaimer-overlay{
+    position:fixed;inset:0;background:rgba(8,14,24,0.92);
+    z-index:999;display:flex;align-items:center;justify-content:center;
+    padding:24px;
+  }
+  .disclaimer-box{
+    background:var(--paper);
+    max-width:560px;
+    width:100%;
+    border-radius:var(--radius);
+    padding:40px 36px 32px;
+    border-top:3px solid var(--brass);
+    box-shadow:0 30px 80px rgba(0,0,0,0.5);
+  }
+  .disclaimer-box .seal-mini{width:46px;height:46px;margin-bottom:18px;}
+  .disclaimer-box h3{font-size:20px;margin-bottom:14px;}
+  .disclaimer-box p{font-size:14.5px;color:var(--slate);margin-bottom:14px;}
+  .disclaimer-box .bci-note{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--slate-light);letter-spacing:.04em;text-transform:uppercase;margin-bottom:24px;}
+  .btn-agree{
+    background:var(--ink);color:var(--paper);border:none;
+    font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    padding:14px 30px;border-radius:var(--radius);cursor:pointer;width:100%;
+    transition:background .25s ease;
+  }
+  .btn-agree:hover{background:var(--ink-3);}
 
-nav.primary-nav{ display:flex; align-items:center; gap:38px; }
-nav.primary-nav a{
-  color:var(--on-ink-muted); font-size:0.92rem; font-weight:500; position:relative; padding:4px 0;
-  transition:color .25s var(--ease);
-}
-nav.primary-nav a::after{
-  content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px; background:var(--gold-light);
-  transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease);
-}
-nav.primary-nav a:hover{ color:#fff; }
-nav.primary-nav a:hover::after{ transform:scaleX(1); }
+  /* ============ HEADER ============ */
+  .topbar{
+    background:var(--ink);color:var(--paper);
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.03em;
+  }
+  .topbar .container{display:flex;justify-content:space-between;align-items:center;height:38px;}
+  .topbar a{opacity:.85;transition:opacity .2s;}
+  .topbar a:hover{opacity:1;color:var(--signal-light);}
+  .topbar-links{display:flex;gap:26px;}
+  .topbar-hours{color:var(--slate-light);}
+  @media (max-width:760px){.topbar-hours{display:none;}}
 
-.header-cta{ display:flex; align-items:center; gap:18px; }
-.header-phone{ display:flex; align-items:center; gap:8px; color:var(--gold-light); font-family:var(--font-mono); font-size:0.86rem; }
-.header-phone svg{ width:15px; height:15px; }
+  header.site-header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(243,241,234,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:84px;}
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand-seal{width:48px;height:48px;flex:none;}
+  .brand-text .firm-name{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:var(--ink);line-height:1.1;}
+  .brand-text .firm-tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-deep);margin-top:3px;}
 
-.burger{ display:none; width:34px; height:34px; border:none; background:transparent; position:relative; }
-.burger span{ position:absolute; left:6px; right:6px; height:2px; background:#fff; transition:transform .3s var(--ease), opacity .3s var(--ease); }
-.burger span:nth-child(1){ top:11px; }
-.burger span:nth-child(2){ top:17px; }
-.burger span:nth-child(3){ top:23px; }
-.burger.open span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
-.burger.open span:nth-child(2){ opacity:0; }
-.burger.open span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+  nav.main-nav{display:flex;align-items:center;gap:36px;}
+  nav.main-nav a{
+    font-size:14px;font-weight:500;color:var(--charcoal);
+    position:relative;padding:4px 0;
+  }
+  nav.main-nav a::after{
+    content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--brass);
+    transition:width .25s ease;
+  }
+  nav.main-nav a:hover::after{width:100%;}
 
-.mobile-menu{
-  position:fixed; inset:0; background:var(--ink); z-index:999;
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:30px;
-  opacity:0; visibility:hidden; transform:translateY(-12px);
-  transition:opacity .35s var(--ease), transform .35s var(--ease), visibility .35s;
-}
-.mobile-menu.open{ opacity:1; visibility:visible; transform:translateY(0); }
-.mobile-menu a{ font-family:var(--font-display); font-size:1.7rem; color:#fff; }
-.mobile-menu .header-phone{ font-size:1rem; margin-top:10px; }
+  .nav-cta{
+    display:flex;align-items:center;gap:18px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;
+    letter-spacing:.06em;text-transform:uppercase;
+    padding:13px 24px;border-radius:var(--radius);
+    border:1px solid transparent;cursor:pointer;
+    transition:transform .2s ease, background .25s ease, color .25s ease, border-color .25s ease;
+    white-space:nowrap;
+  }
+  .btn-brass{background:var(--brass);color:var(--ink);}
+  .btn-brass:hover{background:var(--brass-light);transform:translateY(-1px);}
+  .btn-outline-dark{border-color:var(--ink);color:var(--ink);}
+  .btn-outline-dark:hover{background:var(--ink);color:var(--paper);}
+  .btn-outline-light{border-color:rgba(244,243,237,0.4);color:var(--paper);}
+  .btn-outline-light:hover{background:var(--paper);color:var(--ink);border-color:var(--paper);}
+  .btn-signal{background:var(--signal);color:var(--ink);}
+  .btn-signal:hover{background:var(--signal-light);transform:translateY(-1px);}
+  .btn-ghost-signal{border-color:rgba(95,207,196,0.5);color:var(--signal-light);}
+  .btn-ghost-signal:hover{background:var(--signal);color:var(--ink);border-color:var(--signal);}
 
-/* ============== HERO ============== */
-.hero{
-  background:radial-gradient(ellipse at 75% 18%, var(--ink-3), var(--ink) 62%);
-  padding:188px 0 0;
-  position:relative;
-  overflow:hidden;
-  color:#fff;
-}
-.hero::before{
-  content:"";
-  position:absolute; inset:0;
-  background-image:
-    linear-gradient(var(--on-ink-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--on-ink-line) 1px, transparent 1px);
-  background-size:64px 64px;
-  mask-image:linear-gradient(180deg, transparent, rgba(0,0,0,0.5) 35%, transparent 85%);
-  opacity:0.5;
-  pointer-events:none;
-}
-.hero-grid{
-  display:grid; grid-template-columns:1.05fr 0.95fr; gap:40px; align-items:center;
-  position:relative; z-index:2;
-  padding-bottom:64px;
-}
-.hero-copy .eyebrow{ color:var(--gold-light); }
-.hero-copy .eyebrow::before{ background:var(--cyber); }
-.hero h1{
-  font-size:clamp(2.3rem, 4.4vw, 3.55rem);
-  color:#fff; line-height:1.1; font-weight:600;
-  max-width:14ch;
-}
-.hero h1 em{ font-style:italic; font-weight:500; color:var(--gold-light); }
-.hero-copy p.lede{
-  margin-top:24px; font-size:1.12rem; color:var(--on-ink-muted); max-width:46ch; line-height:1.7;
-}
-.hero-actions{ display:flex; gap:16px; margin-top:38px; flex-wrap:wrap; }
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+  .hamburger span{width:24px;height:2px;background:var(--ink);display:block;transition:transform .25s ease, opacity .25s ease;}
+  .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger.open span:nth-child(2){opacity:0;}
+  .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
-.hero-visual{ display:flex; align-items:center; justify-content:center; position:relative; }
-.seal-wrap{ width:min(420px, 86%); aspect-ratio:1/1; position:relative; }
-.seal-wrap svg{ width:100%; height:100%; overflow:visible; }
-.ring-rotate{ transform-origin:160px 160px; animation:spin 38s linear infinite; }
-.trace-line{ stroke-dasharray:60; stroke-dashoffset:60; animation:draw 1.6s var(--ease) forwards; }
-.seal-node{ opacity:0; animation:pop .5s var(--ease) forwards; }
-@keyframes spin{ to{ transform:rotate(360deg); } }
-@keyframes draw{ to{ stroke-dashoffset:0; } }
-@keyframes pop{ to{ opacity:1; } }
+  @media (max-width:980px){
+    nav.main-nav{
+      position:fixed;top:0;right:0;height:100vh;width:min(320px,80vw);
+      background:var(--ink);flex-direction:column;align-items:flex-start;
+      padding:100px 32px 40px;gap:26px;
+      transform:translateX(100%);transition:transform .35s ease;
+      z-index:90;
+    }
+    nav.main-nav.open{transform:translateX(0);}
+    nav.main-nav a{color:var(--paper);font-size:16px;}
+    nav.main-nav a::after{background:var(--signal);}
+    .nav-cta .btn-outline-dark{display:none;}
+    .hamburger{display:flex;}
+  }
+  .nav-scrim{
+    position:fixed;inset:0;background:rgba(10,22,40,0.5);z-index:80;
+    opacity:0;pointer-events:none;transition:opacity .3s ease;
+  }
+  .nav-scrim.open{opacity:1;pointer-events:auto;}
 
-.ribbon{
-  background:linear-gradient(90deg, var(--ink-2), var(--ink-3));
-  border-top:1px solid var(--on-ink-line);
-  position:relative; z-index:2;
-}
-.ribbon-row{
-  display:flex; flex-wrap:wrap; align-items:center; gap:14px 0;
-  padding:20px 0;
-  font-family:var(--font-mono); font-size:0.8rem; color:var(--on-ink-muted);
-  letter-spacing:0.02em;
-}
-.ribbon-row span.sep{ margin:0 22px; color:var(--gold); opacity:0.6; }
-.ribbon-row strong{ color:var(--cyber); font-weight:500; }
+  /* ============ HERO ============ */
+  .hero{
+    background:var(--paper);
+    padding:80px 0 100px;
+    overflow:hidden;
+  }
+  .hero .container{
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;
+  }
+  .hero-kicker{margin-bottom:22px;}
+  .hero h1{font-size:clamp(40px,5.4vw,64px);line-height:1.04;margin-bottom:18px;}
+  .hero h1 em{font-style:italic;color:var(--brass-deep);font-weight:500;}
+  .hero-sub{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:500;
+    font-size:20px;color:var(--ink-3);margin-bottom:22px;
+  }
+  .hero p.lede{font-size:16.5px;color:var(--slate);max-width:46ch;margin-bottom:34px;}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:30px;}
+  .hero-trust{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink-3);}
+  .hero-trust .dot{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px rgba(31,163,154,0.18);flex:none;}
 
-/* ============== ABOUT ============== */
-.about{ background:var(--paper); }
-.about-grid{ display:grid; grid-template-columns:0.78fr 1.22fr; gap:64px; align-items:center; }
-.portrait-frame{
-  position:relative; border-radius:var(--r-md); overflow:hidden;
-  aspect-ratio:4/5;
-  background:linear-gradient(155deg, var(--ink-2), var(--ink));
-  display:flex; align-items:center; justify-content:center;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow-md);
-}
-.portrait-frame .mono{
-  font-family:var(--font-display); font-size:5.5rem; color:var(--gold-light); opacity:0.92; font-style:italic;
-}
-.portrait-frame .frame-caption{
-  position:absolute; left:0; right:0; bottom:0; padding:18px 22px;
-  background:linear-gradient(0deg, rgba(11,27,46,0.92), transparent);
-  font-family:var(--font-mono); font-size:0.72rem; color:var(--gold-light); letter-spacing:0.08em;
-}
-.portrait-frame::after{
-  content:""; position:absolute; inset:14px; border:1px solid rgba(217,184,114,0.35); pointer-events:none;
-}
-.about-copy p{ color:var(--muted); margin-top:18px; font-size:1.02rem; line-height:1.8; max-width:60ch; }
-.chip-row{ display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-.chip{
-  font-family:var(--font-mono); font-size:0.74rem; letter-spacing:0.05em;
-  padding:9px 16px; border:1px solid var(--line); border-radius:30px; color:var(--ink);
-  background:#fff;
-}
-.chip.accent{ border-color:var(--cyber); color:var(--cyber-deep); background:rgba(31,184,166,0.06); }
+  .hero-visual{display:flex;align-items:center;justify-content:center;position:relative;}
+  .hero-visual svg{width:100%;max-width:380px;height:auto;}
 
-/* ============== PRACTICE AREAS ============== */
-.practice{ background:var(--paper-2); }
-.practice-featured{
-  display:grid; grid-template-columns:1.1fr 1fr; gap:0;
-  background:var(--ink);
-  border-radius:var(--r-md);
-  overflow:hidden;
-  margin-bottom:22px;
-  position:relative;
-  box-shadow:var(--shadow-lg);
-}
-.practice-featured .pf-copy{ padding:52px 48px; color:#fff; position:relative; z-index:2; }
-.pf-badge{
-  display:inline-flex; align-items:center; gap:8px;
-  font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase;
-  color:var(--ink); background:var(--cyber); padding:6px 12px; border-radius:30px; margin-bottom:20px;
-}
-.practice-featured h3{ color:#fff; font-size:1.85rem; margin-bottom:14px; }
-.practice-featured p{ color:var(--on-ink-muted); max-width:48ch; line-height:1.75; }
-.pf-tags{ display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
-.pf-tags span{
-  font-family:var(--font-mono); font-size:0.72rem; padding:8px 13px; border:1px solid var(--on-ink-line);
-  border-radius:var(--r-sm); color:var(--gold-light);
-}
-.pf-visual{ position:relative; overflow:hidden; }
-.pf-visual svg{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:120%; opacity:0.9; }
+  /* ============ CYBER SECTION ============ */
+  .cyber-section{
+    background:radial-gradient(ellipse at top right, var(--ink-3) 0%, var(--ink) 55%);
+    color:var(--paper);
+    padding:104px 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .cyber-section::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(95,207,196,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(95,207,196,0.06) 1px, transparent 1px);
+    background-size:46px 46px;
+    mask-image:radial-gradient(ellipse at top right, black 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .cyber-head{max-width:680px;margin-bottom:56px;position:relative;}
+  .cyber-head h2{color:var(--paper);font-size:clamp(30px,4vw,44px);margin-bottom:18px;}
+  .cyber-head p{color:rgba(244,243,237,0.72);font-size:16px;max-width:62ch;}
 
-.practice-grid{
-  display:grid; grid-template-columns:repeat(4, 1fr); gap:1px;
-  background:var(--line);
-  border:1px solid var(--line);
-  border-radius:var(--r-md); overflow:hidden;
-}
-.p-card{
-  background:#fff; padding:32px 26px; transition:background .25s var(--ease);
-  display:flex; flex-direction:column; gap:14px;
-}
-.p-card:hover{ background:#FBFAF6; }
-.p-card .icon-wrap{
-  width:46px; height:46px; border-radius:var(--r-sm);
-  background:var(--paper-2); display:flex; align-items:center; justify-content:center;
-  color:var(--ink); transition:background .25s var(--ease), color .25s var(--ease);
-}
-.p-card:hover .icon-wrap{ background:var(--ink); color:var(--gold-light); }
-.p-card .icon-wrap svg{ width:22px; height:22px; }
-.p-card h4{ font-size:1.04rem; font-weight:600; }
-.p-card p{ color:var(--muted); font-size:0.9rem; line-height:1.6; }
+  .cyber-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line-dark);
+    border:1px solid var(--line-dark);
+    border-radius:var(--radius);
+    overflow:hidden;
+    position:relative;
+  }
+  .cyber-card{
+    background:var(--ink);padding:32px 28px;
+    transition:background .3s ease;
+  }
+  .cyber-card:hover{background:var(--ink-2);}
+  .cyber-card .icon-wrap{
+    width:42px;height:42px;border-radius:50%;
+    border:1px solid rgba(95,207,196,0.35);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:18px;color:var(--signal-light);
+  }
+  .cyber-card .icon-wrap svg{width:20px;height:20px;}
+  .cyber-card h4{color:var(--paper);font-size:16.5px;margin-bottom:10px;font-weight:600;}
+  .cyber-card p{color:rgba(244,243,237,0.62);font-size:14px;line-height:1.65;}
 
-/* ============== STATUTES / REGISTER ============== */
-.statutes{ background:var(--ink); color:#fff; }
-.statutes .section-head h2, .statutes .section-head p{ color:#fff; }
-.statutes .section-head p{ color:var(--on-ink-muted); }
-.statutes .eyebrow{ color:var(--gold-light); }
-.statutes .eyebrow::before{ background:var(--cyber); }
-.register{ display:grid; grid-template-columns:1fr 1fr; gap:0 56px; }
-.reg-item{
-  display:flex; align-items:baseline; gap:18px;
-  padding:20px 0; border-bottom:1px solid var(--on-ink-line);
-}
-.reg-tag{
-  font-family:var(--font-mono); font-size:0.74rem; color:var(--cyber);
-  background:rgba(31,184,166,0.1); border:1px solid rgba(31,184,166,0.3);
-  padding:5px 9px; border-radius:var(--r-sm); flex-shrink:0; min-width:62px; text-align:center;
-}
-.reg-item span.act{ color:var(--on-ink-muted); font-size:0.98rem; }
+  .cyber-foot{margin-top:48px;display:flex;align-items:center;gap:22px;flex-wrap:wrap;}
+  .cyber-foot p{color:rgba(244,243,237,0.55);font-size:13.5px;font-family:'IBM Plex Mono',monospace;}
 
-/* ============== WHY CHOOSE ============== */
-.why{ background:var(--paper); }
-.why-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:0; border-top:1px solid var(--line); }
-.why-item{
-  padding:38px 6px 38px 0; border-bottom:1px solid var(--line);
-  display:grid; grid-template-columns:60px 1fr; gap:20px; align-items:start;
-}
-.why-item:nth-child(odd){ border-right:1px solid var(--line); padding-right:40px; }
-.why-item:nth-child(even){ padding-left:40px; }
-.why-num{ font-family:var(--font-mono); font-size:0.78rem; color:var(--gold); padding-top:6px; }
-.why-item h4{ font-size:1.12rem; margin-bottom:8px; }
-.why-item p{ color:var(--muted); font-size:0.95rem; line-height:1.7; }
+  @media (max-width:860px){.cyber-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.cyber-grid{grid-template-columns:1fr;}}
 
-/* ============== CONTACT ============== */
-.contact{ background:var(--paper-2); }
-.contact-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; }
-.contact-info-card{
-  background:var(--ink); color:#fff; border-radius:var(--r-md); padding:46px 38px;
-  box-shadow:var(--shadow-lg);
-}
-.contact-info-card h3{ color:#fff; font-size:1.4rem; margin-bottom:8px; }
-.contact-info-card > p{ color:var(--on-ink-muted); margin-bottom:30px; font-size:0.96rem; }
-.cinfo-row{ display:flex; gap:16px; padding:18px 0; border-top:1px solid var(--on-ink-line); }
-.cinfo-row:first-of-type{ border-top:1px solid var(--on-ink-line); }
-.cinfo-row .ic{ width:38px; height:38px; border-radius:50%; background:rgba(182,141,64,0.15); border:1px solid var(--on-ink-line); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.cinfo-row .ic svg{ width:17px; height:17px; color:var(--gold-light); }
-.cinfo-row .label{ font-family:var(--font-mono); font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-light); margin-bottom:4px; }
-.cinfo-row .val{ font-size:0.95rem; color:#fff; }
-.cinfo-row .val small{ display:block; color:var(--on-ink-muted); font-size:0.82rem; font-weight:400; margin-top:2px; }
+  /* ============ PRACTICE AREAS ============ */
+  .practice-section{padding:104px 0;background:var(--surface);}
+  .section-head{max-width:680px;margin-bottom:54px;}
+  .section-head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:16px;}
+  .section-head p{color:var(--slate);font-size:16px;max-width:62ch;}
 
-.form-card{
-  background:#fff; border:1px solid var(--line); border-radius:var(--r-md); padding:44px 40px;
-  box-shadow:var(--shadow-md);
-}
-.form-row{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-.field{ margin-bottom:20px; }
-.field label{ display:block; font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted); margin-bottom:8px; }
-.field input, .field select, .field textarea{
-  width:100%; border:1px solid var(--line); border-radius:var(--r-sm); padding:13px 14px;
-  background:var(--paper); color:var(--text); transition:border-color .25s var(--ease), background .25s var(--ease);
-}
-.field input:focus, .field select:focus, .field textarea:focus{
-  outline:none; border-color:var(--cyber); background:#fff;
-}
-.field textarea{ resize:vertical; min-height:110px; }
-.form-foot{ display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:6px; }
-.form-foot small{ color:var(--muted); font-size:0.8rem; max-width:32ch; }
+  .practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .practice-card{
+    background:var(--surface);padding:30px 26px;
+    border-top:2px solid transparent;
+    transition:border-color .25s ease, background .25s ease;
+  }
+  .practice-card:hover{border-top-color:var(--brass);background:var(--paper);}
+  .practice-card .pc-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px;}
+  .practice-card .pc-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--slate-light);letter-spacing:.05em;}
+  .practice-card .icon-wrap{
+    width:38px;height:38px;border-radius:50%;background:var(--paper);
+    display:flex;align-items:center;justify-content:center;color:var(--brass-deep);flex:none;
+  }
+  .practice-card .icon-wrap svg{width:18px;height:18px;}
+  .practice-card h4{font-size:17px;margin-bottom:9px;}
+  .practice-card p{font-size:14px;color:var(--slate);line-height:1.65;}
 
-/* ============== FOOTER ============== */
-footer{ background:var(--ink); color:var(--on-ink-muted); padding-top:80px; }
-.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:48px; padding-bottom:54px; border-bottom:1px solid var(--on-ink-line); }
-.footer-brand .brand{ margin-bottom:18px; }
-.footer-brand p{ max-width:34ch; font-size:0.92rem; line-height:1.7; }
-.footer-col h5{ font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-light); margin-bottom:18px; }
-.footer-col ul li{ margin-bottom:11px; }
-.footer-col ul li a{ font-size:0.92rem; transition:color .2s var(--ease); }
-.footer-col ul li a:hover{ color:var(--gold-light); }
-.footer-bottom{
-  padding:26px 0 36px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
-  font-size:0.82rem; color:rgba(246,245,240,0.42);
-}
-.footer-bottom a{ color:rgba(246,245,240,0.5); }
-.footer-bottom a:hover{ color:var(--gold-light); }
+  @media (max-width:860px){.practice-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.practice-grid{grid-template-columns:1fr;}}
 
-/* ============== DISCLAIMER MODAL (Bar Council of India) ============== */
-.disclaimer-overlay{
-  position:fixed; inset:0; background:rgba(11,27,46,0.92); backdrop-filter:blur(6px);
-  z-index:2000; display:flex; align-items:center; justify-content:center; padding:24px;
-  opacity:1; transition:opacity .4s var(--ease), visibility .4s var(--ease);
-}
-.disclaimer-overlay.hidden{ opacity:0; visibility:hidden; pointer-events:none; }
-.disclaimer-box{
-  max-width:560px; background:var(--paper); border-radius:var(--r-md); padding:44px 40px;
-  border-top:3px solid var(--gold); box-shadow:var(--shadow-lg);
-}
-.disclaimer-box .seal-mini{ width:46px; height:46px; margin-bottom:20px; }
-.disclaimer-box h3{ font-size:1.3rem; margin-bottom:16px; }
-.disclaimer-box p{ color:var(--muted); font-size:0.92rem; line-height:1.75; margin-bottom:14px; }
-.disclaimer-actions{ display:flex; gap:14px; margin-top:24px; flex-wrap:wrap; }
+  /* ============ ABOUT ============ */
+  .about-section{padding:104px 0;background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:64px;align-items:center;}
+  .portrait-frame{
+    position:relative;aspect-ratio:4/5;border-radius:var(--radius);
+    background:linear-gradient(160deg,var(--ink) 0%, var(--ink-3) 100%);
+    display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);
+    overflow:hidden;
+  }
+  .portrait-frame .frame-monogram{font-family:'Fraunces',serif;font-size:96px;color:rgba(184,137,62,0.35);font-style:italic;}
+  .portrait-frame .frame-corner{position:absolute;width:28px;height:28px;border:1.5px solid var(--brass);opacity:.7;}
+  .portrait-frame .tl{top:18px;left:18px;border-right:none;border-bottom:none;}
+  .portrait-frame .br{bottom:18px;right:18px;border-left:none;border-top:none;}
+  /* To use a real photo instead of the monogram placeholder:
+     replace the contents of .portrait-frame with:
+     <img src="assets/shantanu-padwal.jpg" alt="Adv. Shantanu Padwal"> and remove .frame-monogram */
 
-/* ============== REVEAL ON SCROLL ============== */
-.reveal{ opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
-.reveal.in{ opacity:1; transform:translateY(0); }
+  .about-copy h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:4px;}
+  .about-role{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:22px;display:block;}
+  .about-copy p{color:var(--slate);font-size:15.5px;margin-bottom:16px;max-width:60ch;}
+  .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;}
+  .badge{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;
+    border:1px solid var(--line);padding:8px 14px;border-radius:30px;color:var(--ink-3);
+    background:var(--surface);
+  }
 
-/* ============== FOCUS STATES ============== */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
-  outline:2px solid var(--cyber); outline-offset:3px;
-}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;}.portrait-frame{max-width:320px;margin:0 auto;}}
 
-/* ============== RESPONSIVE ============== */
-@media (max-width: 980px){
-  nav.primary-nav, .header-phone{ display:none; }
-  .burger{ display:block; }
-  .hero-grid{ grid-template-columns:1fr; }
-  .hero-visual{ order:-1; padding-bottom:10px; }
-  .seal-wrap{ width:min(280px, 70%); }
-  .about-grid{ grid-template-columns:1fr; gap:42px; }
-  .portrait-frame{ max-width:320px; margin:0 auto; }
-  .practice-featured{ grid-template-columns:1fr; }
-  .pf-visual{ min-height:220px; }
-  .practice-grid{ grid-template-columns:repeat(2, 1fr); }
-  .register{ grid-template-columns:1fr; }
-  .why-grid{ grid-template-columns:1fr; }
-  .why-item:nth-child(odd){ border-right:none; padding-right:0; }
-  .why-item:nth-child(even){ padding-left:0; }
-  .contact-grid{ grid-template-columns:1fr; gap:40px; }
-  .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
-}
-@media (max-width: 600px){
-  .section{ padding:76px 0; }
-  .hero{ padding-top:148px; }
-  .form-row{ grid-template-columns:1fr; }
-  .practice-grid{ grid-template-columns:1fr; }
-  .footer-grid{ grid-template-columns:1fr; }
-  .form-card{ padding:30px 22px; }
-  .contact-info-card{ padding:34px 26px; }
-}
-@media (prefers-reduced-motion: reduce){
-  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
-}
+  /* ============ WHY US ============ */
+  .why-section{padding:104px 0;background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;}
+  .why-card .why-num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--brass);margin-bottom:16px;}
+  .why-card h4{font-size:17px;margin-bottom:10px;line-height:1.3;}
+  .why-card p{font-size:14px;color:var(--slate);line-height:1.65;}
+  @media (max-width:860px){.why-grid{grid-template-columns:1fr 1fr;row-gap:40px;}}
+  @media (max-width:560px){.why-grid{grid-template-columns:1fr;}}
+
+  /* ============ CONTACT ============ */
+  .contact-section{padding:104px 0;background:var(--ink);color:var(--paper);position:relative;overflow:hidden;}
+  .contact-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;}
+  .contact-info h2{color:var(--paper);font-size:clamp(28px,3.6vw,38px);margin-bottom:16px;}
+  .contact-info > p{color:rgba(244,243,237,0.65);font-size:15.5px;margin-bottom:36px;max-width:46ch;}
+
+  .info-card{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line-dark);}
+  .info-card:last-of-type{border-bottom:1px solid var(--line-dark);}
+  .info-card .icon-wrap{width:40px;height:40px;border-radius:50%;border:1px solid rgba(184,137,62,0.4);display:flex;align-items:center;justify-content:center;color:var(--brass-light);flex:none;}
+  .info-card .icon-wrap svg{width:18px;height:18px;}
+  .info-card h5{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-light);margin-bottom:6px;}
+  .info-card a, .info-card p.value{color:var(--paper);font-size:15.5px;font-weight:500;}
+  .info-card a:hover{color:var(--signal-light);}
+  .info-card .sub{color:rgba(244,243,237,0.55);font-size:13.5px;margin-top:2px;font-weight:400;}
+
+  .whatsapp-link{display:inline-flex;align-items:center;gap:8px;margin-top:28px;color:var(--signal-light);font-size:14px;font-weight:500;}
+  .whatsapp-link svg{width:18px;height:18px;}
+
+  .contact-form{
+    background:var(--surface);border-radius:var(--radius);padding:40px;
+    color:var(--charcoal);box-shadow:var(--shadow);
+  }
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+  .field{display:flex;flex-direction:column;gap:7px;}
+  .field.full{grid-column:1/-1;}
+  .field label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--slate);}
+  .field input, .field select, .field textarea{
+    border:1px solid var(--line);border-radius:var(--radius);padding:13px 14px;
+    font-family:'Inter',sans-serif;font-size:14.5px;color:var(--charcoal);background:var(--paper);
+    transition:border-color .2s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--brass);outline:none;}
+  .field textarea{resize:vertical;min-height:110px;}
+  .form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:6px;flex-wrap:wrap;}
+  .form-note{font-size:12.5px;color:var(--slate-light);max-width:34ch;}
+  .hp-field{position:absolute;left:-9999px;opacity:0;height:0;width:0;}
+
+  @media (max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+  @media (max-width:560px){.form-row{grid-template-columns:1fr;}}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--ink-2);color:var(--paper);padding:72px 0 0;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid var(--line-dark);}
+  .footer-brand .brand{margin-bottom:18px;}
+  .footer-brand .brand-text .firm-name{color:var(--paper);}
+  .footer-brand p{color:rgba(244,243,237,0.6);font-size:14px;max-width:34ch;margin-bottom:18px;}
+  footer h5{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-light);margin-bottom:20px;}
+  footer ul li{margin-bottom:12px;}
+  footer ul li a{color:rgba(244,243,237,0.72);font-size:14px;transition:color .2s ease;}
+  footer ul li a:hover{color:var(--signal-light);}
+  .footer-bottom{padding:26px 0 30px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
+  .footer-bottom p{font-size:12.5px;color:rgba(244,243,237,0.45);}
+  .footer-bottom .bci{max-width:640px;}
+
+  @media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;row-gap:40px;}}
+  @media (max-width:560px){.footer-grid{grid-template-columns:1fr;}}
+
+  /* ============ misc ============ */
+  .skip-link{
+    position:absolute;left:-9999px;top:0;background:var(--brass);color:var(--ink);
+    padding:12px 18px;z-index:1000;font-family:'IBM Plex Mono',monospace;font-size:13px;
+  }
+  .skip-link:focus{left:16px;top:16px;}
+
+  @media (max-width:980px){
+    .hero .container{grid-template-columns:1fr;}
+    .hero-visual{order:-1;max-width:260px;margin:0 auto 20px;}
+  }
 </style>
 </head>
 <body>
 
-<!-- ============== ICON SPRITE ============== -->
-<svg style="display:none" aria-hidden="true">
-  <symbol id="icon-cyber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 3 19 6v6c0 5-3 8.5-7 9-4-.5-7-4-7-9V6z"/>
-    <rect x="9.3" y="11" width="5.4" height="4.2" rx="0.6"/>
-    <path d="M10.3 11V9.4a1.7 1.7 0 0 1 3.4 0V11"/>
-  </symbol>
-  <symbol id="icon-civil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 3v17M7 21h10M5 7h14"/>
-    <path d="M5 7 2.5 12a2.7 2.7 0 0 0 5 0L5 7ZM19 7l-2.5 5a2.7 2.7 0 0 0 5 0L19 7Z"/>
-  </symbol>
-  <symbol id="icon-criminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="3" y="16.5" width="9" height="2.6" rx="0.4"/>
-    <path d="M13.6 6.6 17.4 10.4M11.2 9 7 13.2a1.6 1.6 0 0 0 0 2.2l1.6 1.6a1.6 1.6 0 0 0 2.2 0L15 13M15.4 4.4l4.2 4.2"/>
-  </symbol>
-  <symbol id="icon-ipr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="9"/>
-    <path d="M14.3 9.6a2.6 2.6 0 1 0 0 4.8"/>
-  </symbol>
-  <symbol id="icon-motor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 16V12l1.8-4.2A2 2 0 0 1 7.6 6.6h8.8a2 2 0 0 1 1.8 1.2L20 12v4"/>
-    <path d="M4 16h16M6.5 16v2M17.5 16v2"/>
-    <circle cx="7.5" cy="16" r="1.6"/><circle cx="16.5" cy="16" r="1.6"/>
-  </symbol>
-  <symbol id="icon-corporate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="5" y="4" width="9" height="17"/>
-    <rect x="14" y="9" width="5" height="12"/>
-    <path d="M7.5 7.5h1M10.5 7.5h1M7.5 11h1M10.5 11h1M7.5 14.5h1M10.5 14.5h1"/>
-  </symbol>
-  <symbol id="icon-contracts" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M6 3h9l4 4v14H6z"/>
-    <path d="M9 11h6M9 14.5h6M9 7.5h3"/>
-  </symbol>
-  <symbol id="icon-conveyance" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="8" cy="9" r="3.4"/>
-    <path d="M10.3 11.3 18.5 19.5M16 16l2-2M18.3 18.3l2-2"/>
-  </symbol>
-  <symbol id="icon-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 11 12 4l8 7"/>
-    <path d="M6 10v9.5h12V10"/>
-    <path d="M12 19.5v-4.8c0-1-.9-1.8-2-1.8s-2 .8-2 1.8M16 19.5v-3.2"/>
-  </symbol>
-  <symbol id="icon-consumer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M6 8h12l-1 12H7z"/>
-    <path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>
-    <path d="m9.5 12.5 1.8 1.8 3.2-3.4"/>
-  </symbol>
-  <symbol id="icon-msme" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 20V11l4-2.5V11l4-2.5V11l4-2.5V20z"/>
-    <path d="M16 20v-4.5M19 20V9l-3 1.7M4 20h16"/>
-  </symbol>
-  <symbol id="icon-debt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="13" r="7.2"/>
-    <path d="M12 9.3v7.4M14 10.7c-.4-.7-1.2-1.1-2-1.1-1.2 0-2.1.7-2.1 1.7 0 2.3 4.1 1.2 4.1 3.5 0 1-1 1.7-2.1 1.7-.9 0-1.7-.4-2.1-1.1M9.5 4l2.5 2 2.5-2"/>
-  </symbol>
-  <symbol id="icon-tax" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/>
-    <circle cx="9.6" cy="9.5" r="1.2"/><circle cx="14.4" cy="14.5" r="1.2"/>
-    <path d="m9 15 6-6"/>
-  </symbol>
-  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M5 4h3.4l1.6 4.2-2 1.8a13 13 0 0 0 6 6l1.8-2L20 15.6V19a1 1 0 0 1-1.1 1A15 15 0 0 1 4 5.1 1 1 0 0 1 5 4Z"/>
-  </symbol>
-  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="3.5" y="5.5" width="17" height="13" rx="1.4"/>
-    <path d="m4.5 6.5 7.5 6.5 7.5-6.5"/>
-  </symbol>
-  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="8.3"/>
-    <path d="M12 7.5V12l3 2"/>
-  </symbol>
-  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 21s-6.5-6-6.5-11A6.5 6.5 0 0 1 18.5 10C18.5 15 12 21 12 21Z"/>
-    <circle cx="12" cy="10" r="2.2"/>
-  </symbol>
-</svg>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============== DISCLAIMER (Bar Council of India compliance) ============== -->
-<div class="disclaimer-overlay" id="disclaimerOverlay">
+<!-- ============ DISCLAIMER (Bar Council of India compliance) ============ -->
+<div id="disclaimerOverlay" class="disclaimer-overlay" role="dialog" aria-modal="true" aria-labelledby="disclaimerTitle">
   <div class="disclaimer-box">
-    <svg class="seal-mini" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="#0B1B2E"/><circle cx="16" cy="16" r="15" fill="none" stroke="#B68D40"/><text x="16" y="21" font-family="Georgia,serif" font-size="12" fill="#D9B872" text-anchor="middle">P&amp;A</text></svg>
-    <h3>Disclaimer &amp; Confirmation</h3>
-    <p>As per the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. By clicking "I Agree" below, the user acknowledges the following:</p>
-    <p>There has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from Padwal &amp; Associates or any of its members to solicit any work through this website. The user wishes to gain more information about the firm for their own information and use.</p>
-    <p>Information on this website is provided for general informational purposes only and does not constitute legal advice. Transmission of information through this site does not create an advocate-client relationship.</p>
-    <div class="disclaimer-actions">
-      <button class="btn btn-gold" id="disclaimerAgree">I Agree &amp; Enter Site</button>
-    </div>
+    <svg class="seal-mini" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" stroke="#B8893E" stroke-width="1.3"/>
+      <path d="M24 13 L31 16.5 L31 24 Q31 31 24 35 Q17 31 17 24 L17 16.5 Z" fill="#0A1628" stroke="#B8893E" stroke-width="1"/>
+      <rect x="20.5" y="23" width="7" height="6" rx="1" fill="#1FA39A"/>
+      <path d="M21.7 23 V20.5 a2.3 2.3 0 0 1 4.6 0 V23" stroke="#1FA39A" stroke-width="1.2" fill="none"/>
+    </svg>
+    <h3 id="disclaimerTitle">Before you proceed</h3>
+    <p>The Bar Council of India does not permit advocates to advertise or solicit work. By clicking "I Agree" below, you confirm that you are seeking information about Padwal &amp; Associates on your own accord, and that there has been no solicitation, advertisement, or inducement by the firm or any of its members.</p>
+    <p>The contents of this website are for informational purposes only and should not be construed as legal advice. Past results do not guarantee similar outcomes. We recommend seeking independent legal counsel for matters specific to you.</p>
+    <p class="bci-note">As per Rule 36, Bar Council of India Rules</p>
+    <button class="btn-agree" id="agreeBtn">I Agree &amp; Enter Site</button>
   </div>
 </div>
 
-<!-- ============== HEADER ============== -->
-<header id="siteHeader">
-  <div class="container nav-row">
-    <a href="#home" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="18.5" fill="none" stroke="#B68D40" stroke-width="1.2"/>
-        <circle cx="20" cy="20" r="14.5" fill="none" stroke="#1FB8A6" stroke-width="0.8" stroke-dasharray="2 3"/>
-        <text x="20" y="25.5" font-family="Fraunces, Georgia, serif" font-size="13" fill="#D9B872" text-anchor="middle">P&amp;A</text>
+<div class="nav-scrim" id="navScrim"></div>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links">
+      <a href="tel:+919921744777">+91 99217 44777</a>
+      <a href="mailto:advshantanupadwal@gmail.com">advshantanupadwal@gmail.com</a>
+    </div>
+    <div class="topbar-hours">Mon–Fri 9:00–18:00 · Sat 10:00–14:00</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand" aria-label="Padwal & Associates home">
+      <svg class="brand-seal" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" stroke="#B8893E" stroke-width="1.2"/>
+        <path d="M24 12 L32 16 L32 25 Q32 33 24 37 Q16 33 16 25 L16 16 Z" fill="#0A1628" stroke="#B8893E" stroke-width="1"/>
+        <rect x="20.2" y="24.5" width="7.6" height="6.4" rx="1" fill="#1FA39A"/>
+        <path d="M21.5 24.5 V21.8 a2.5 2.5 0 0 1 5 0 V24.5" stroke="#1FA39A" stroke-width="1.3" fill="none"/>
+        <circle cx="33" cy="14" r="2" fill="#1FA39A"/>
+        <path d="M30.5 16.5 L28.5 18.5" stroke="#1FA39A" stroke-width="1" opacity="0.6"/>
       </svg>
       <span class="brand-text">
-        <span class="name">Padwal &amp; Associates</span>
-        <span class="tag">Advocates · Cyber Law Specialists</span>
+        <span class="firm-name" style="display:block;">Padwal &amp; Associates</span>
+        <span class="firm-tag" style="display:block;">Advocates &amp; Cyber Law Specialists</span>
       </span>
     </a>
-    <nav class="primary-nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#practice">Practice Areas</a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
       <a href="#cyber">Cyber Law</a>
+      <a href="#practice">Practice Areas</a>
+      <a href="#about">About</a>
       <a href="#why">Why Us</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="header-cta">
-      <a class="header-phone" href="tel:+919921744777"><svg><use href="#icon-phone"/></svg> +91 99217 44777</a>
-      <a class="btn btn-gold" href="#contact" style="padding:11px 22px;">Schedule Consultation</a>
-      <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-outline-dark">Schedule Consultation</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about" class="mlink">About</a>
-  <a href="#practice" class="mlink">Practice Areas</a>
-  <a href="#cyber" class="mlink">Cyber Law</a>
-  <a href="#why" class="mlink">Why Us</a>
-  <a href="#contact" class="mlink">Contact</a>
-  <a class="header-phone" href="tel:+919921744777"><svg><use href="#icon-phone"/></svg> +91 99217 44777</a>
-</div>
+<main id="main">
 
-<!-- ============== HERO ============== -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow">Advocates · High Court &amp; District Courts</span>
-        <h1>Steadfast legal counsel, <em>sharpened</em> for the digital age.</h1>
-        <p class="lede">Padwal &amp; Associates brings rigorous courtroom practice and specialised Cyber Law expertise under one roof — guiding individuals, families and businesses through matters spanning Civil, Criminal, Corporate and Cyber law with equal precision.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-gold">Schedule a Consultation</a>
-          <a href="tel:+919921744777" class="btn btn-outline">
-            <svg><use href="#icon-phone"/></svg> Call +91 99217 44777
-          </a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="seal-wrap">
-          <svg viewBox="0 0 320 320" aria-hidden="true">
-            <g class="ring-rotate">
-              <circle cx="160" cy="160" r="148" fill="none" stroke="#B68D40" stroke-width="1.4" opacity="0.55"/>
-              <circle cx="160" cy="160" r="128" fill="none" stroke="#1FB8A6" stroke-width="1" stroke-dasharray="3 6" opacity="0.6"/>
-            </g>
-            <!-- circuit traces -->
-            <g stroke="#1FB8A6" stroke-width="1.2" opacity="0.8">
-              <line class="trace-line" style="animation-delay:.1s" x1="288" y1="160" x2="310" y2="160"/>
-              <line class="trace-line" style="animation-delay:.2s" x1="250.5" y1="250.5" x2="266" y2="266"/>
-              <line class="trace-line" style="animation-delay:.3s" x1="160" y1="288" x2="160" y2="310"/>
-              <line class="trace-line" style="animation-delay:.4s" x1="69.5" y1="250.5" x2="54" y2="266"/>
-              <line class="trace-line" style="animation-delay:.5s" x1="32" y1="160" x2="10" y2="160"/>
-              <line class="trace-line" style="animation-delay:.6s" x1="69.5" y1="69.5" x2="54" y2="54"/>
-              <line class="trace-line" style="animation-delay:.7s" x1="160" y1="32" x2="160" y2="10"/>
-              <line class="trace-line" style="animation-delay:.8s" x1="250.5" y1="69.5" x2="266" y2="54"/>
-            </g>
-            <g fill="#D9B872">
-              <circle class="seal-node" style="animation-delay:.9s" cx="310" cy="160" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1s" cx="266" cy="266" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.1s" cx="160" cy="310" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.2s" cx="54" cy="266" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.3s" cx="10" cy="160" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.4s" cx="54" cy="54" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.5s" cx="160" cy="10" r="3.4"/>
-              <circle class="seal-node" style="animation-delay:1.6s" cx="266" cy="54" r="3.4"/>
-            </g>
-            <!-- center shield + lock -->
-            <circle cx="160" cy="160" r="92" fill="#0F2238" stroke="#B68D40" stroke-width="1"/>
-            <path d="M160 100 196 113 V158 C196 188 182 208 160 217 C138 208 124 188 124 158 V113 Z" fill="none" stroke="#D9B872" stroke-width="1.6"/>
-            <rect x="148" y="151" width="24" height="19" rx="2.5" fill="none" stroke="#1FB8A6" stroke-width="1.6"/>
-            <path d="M151 151 V143.5 a9 9 0 0 1 18 0 V151" fill="none" stroke="#1FB8A6" stroke-width="1.6"/>
-            <text x="160" y="196" font-family="Fraunces, Georgia, serif" font-size="13" fill="#D9B872" text-anchor="middle" letter-spacing="2">P &amp; A</text>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ribbon">
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
     <div class="container">
-      <div class="ribbon-row">
-        <strong>Cyber Law &amp; Data Security</strong> Specialists <span class="sep">/</span> 13 Areas of Practice <span class="sep">/</span> IT Act 2000 &amp; DPDP Act 2023 <span class="sep">/</span> Consultations Pan-India
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== ABOUT ============== -->
-<section class="section about" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="portrait-frame reveal">
-        <span class="mono">P&amp;A</span>
-        <div class="frame-caption">ADV. SHANTANU PADWAL — FOUNDING ADVOCATE</div>
-      </div>
-      <div class="about-copy reveal">
-        <span class="eyebrow">About the Firm</span>
-        <h2>A practice rooted in diligence, defined by foresight.</h2>
-        <p>Padwal &amp; Associates is a full-service law firm built around a simple principle: clients deserve counsel that is both technically rigorous and genuinely accessible. Founding advocate Shantanu Padwal has built a practice spanning civil, criminal, corporate and family law — while developing a particular depth of expertise in <strong>Cyber Law</strong>, an area that now sits at the heart of the firm's identity.</p>
-        <p>That specialisation covers the Information Technology Act 2000, the Digital Personal Data Protection Act 2023, cybercrime litigation, data breach response and corporate cybersecurity advisory — equipping the firm to represent clients confidently as legal and digital risk increasingly intersect. Every other practice area is handled with the same meticulous, preventive approach.</p>
-        <div class="chip-row">
-          <span class="chip accent">Cyber Law Specialist</span>
-          <span class="chip">Litigation &amp; Advisory</span>
-          <span class="chip">Pan-India Consultations</span>
-          <span class="chip">Individual &amp; Corporate Clients</span>
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Advocates &amp; Legal Counsel — Maharashtra, India</div>
+        <h1>Padwal &amp; Associates</h1>
+        <p class="hero-sub">Counsel for the connected age.</p>
+        <p class="lede">A full-service law firm built on traditional legal rigour and led by one of India's specialist cyber law advocates — representing individuals, families, and businesses with precision and discretion.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-brass">Schedule a Consultation</a>
+          <a href="tel:+919921744777" class="btn btn-outline-dark">Call +91 99217 44777</a>
         </div>
+        <div class="hero-trust"><span class="dot"></span> Led by Adv. Shantanu Padwal — Cyber Law Specialist</div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============== PRACTICE AREAS ============== -->
-<section class="section practice" id="practice">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Areas of Practice</span>
-      <h2>Full-spectrum legal representation.</h2>
-      <p>From courtroom litigation to boardroom compliance — with Cyber Law as our defining strength.</p>
-    </div>
+      <div class="hero-visual reveal">
+        <svg viewBox="0 0 360 360" fill="none" role="img" aria-label="Padwal and Associates seal">
+          <defs>
+            <path id="sealArcTop" d="M 50,180 a130,130 0 1,1 260,0" fill="none"/>
+          </defs>
+          <circle cx="180" cy="180" r="172" stroke="#B8893E" stroke-width="1"/>
+          <circle cx="180" cy="180" r="155" stroke="#B8893E" stroke-width="1" stroke-dasharray="1 7" opacity="0.6"/>
 
-    <div class="practice-featured reveal" id="cyber">
-      <div class="pf-copy">
-        <span class="pf-badge">Primary Practice</span>
-        <h3>Cyber Law &amp; Data Security</h3>
-        <p>Specialised representation in cybercrime litigation, data breach response and technology compliance — including the Digital Personal Data Protection Act 2023 and Information Technology Act 2000. This is where the firm's deepest expertise lies.</p>
-        <div class="pf-tags">
-          <span>DPDP Act Compliance</span>
-          <span>Cybercrime Litigation</span>
-          <span>Data Breach Response</span>
-          <span>IT Act Advisory</span>
-        </div>
-        <a href="#contact" class="btn btn-gold" style="margin-top:30px;">Discuss a Cyber Matter</a>
-      </div>
-      <div class="pf-visual">
-        <svg viewBox="0 0 320 320" aria-hidden="true">
-          <circle cx="160" cy="160" r="150" fill="none" stroke="#1FB8A6" stroke-width="1" opacity="0.35"/>
-          <circle cx="160" cy="160" r="118" fill="none" stroke="#1FB8A6" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
-          <circle cx="160" cy="160" r="80" fill="none" stroke="#B68D40" stroke-width="1" opacity="0.4"/>
-          <path d="M160 95 200 110 V162 C200 198 184 222 160 232 C136 222 120 198 120 162 V110 Z" fill="none" stroke="#D9B872" stroke-width="1.4" opacity="0.85"/>
-          <rect x="146" y="155" width="28" height="22" rx="3" fill="none" stroke="#1FB8A6" stroke-width="1.6"/>
-          <path d="M150 155v-9a10 10 0 0 1 20 0v9" fill="none" stroke="#1FB8A6" stroke-width="1.6"/>
+          <text font-family="'IBM Plex Mono',monospace" font-size="13.5" letter-spacing="4" fill="#8F6A2B" font-weight="600">
+            <textPath href="#sealArcTop" startOffset="50%" text-anchor="middle">PADWAL &amp; ASSOCIATES</textPath>
+          </text>
+
+          <text x="180" y="285" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" letter-spacing="2.5" fill="#5C6679">ADVOCATES &amp; SOLICITORS</text>
+          <text x="180" y="302" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9.5" letter-spacing="2" fill="#8A93A3">MAHARASHTRA · INDIA</text>
+
+          <!-- shield -->
+          <path d="M180,108 L218,124 L218,168 Q218,212 180,234 Q142,212 142,168 L142,124 Z" fill="#0A1628" stroke="#B8893E" stroke-width="1.4"/>
+
+          <!-- lock -->
+          <rect x="164" y="166" width="32" height="27" rx="3" fill="#1FA39A"/>
+          <path d="M169,166 v-13 a11,11 0 0 1 22,0 v13" stroke="#1FA39A" stroke-width="3.4" fill="none"/>
+          <circle cx="180" cy="178" r="3.4" fill="#0A1628"/>
+          <rect x="178.3" y="180" width="3.4" height="7" fill="#0A1628"/>
+
+          <!-- circuit traces -->
+          <g stroke="#1FA39A" stroke-width="1.3" fill="none" opacity="0.85">
+            <path d="M218,140 H244 V120"/>
+            <path d="M142,196 H116 V216"/>
+            <path d="M218,196 H238 V222"/>
+          </g>
+          <g fill="#1FA39A">
+            <circle cx="244" cy="120" r="3.2"/>
+            <circle cx="116" cy="216" r="3.2"/>
+            <circle cx="238" cy="222" r="3.2"/>
+          </g>
+          <g fill="#B8893E" opacity="0.7">
+            <circle cx="180" cy="108" r="2.4"/>
+            <circle cx="218" cy="124" r="2.4"/>
+            <circle cx="142" cy="124" r="2.4"/>
+          </g>
         </svg>
       </div>
     </div>
+  </section>
 
-    <div class="practice-grid reveal">
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-civil"/></svg></div>
-        <h4>Civil</h4>
-        <p>Property disputes, recovery suits and injunctions resolved with precision.</p>
+  <!-- ============ CYBER LAW (SPECIALIZATION) ============ -->
+  <section class="cyber-section" id="cyber">
+    <div class="container">
+      <div class="cyber-head reveal">
+        <div class="eyebrow on-dark">The Firm's Specialization</div>
+        <h2>Cyber Law, Practised at Depth</h2>
+        <p>Adv. Shantanu Padwal has built his practice around the legal architecture of the digital world — from the Information Technology Act, 2000 to the Digital Personal Data Protection Act, 2023. The firm advises individuals on cyber fraud and online harassment, and counsels companies on compliance, breach response, and digital risk, before regulators and before the courts.</p>
       </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-criminal"/></svg></div>
-        <h4>Criminal</h4>
-        <p>Defence and representation across criminal trials, bail and appeals.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-ipr"/></svg></div>
-        <h4>IPR</h4>
-        <p>Protection and enforcement of trademarks, copyrights and patents.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-motor"/></svg></div>
-        <h4>Motor Accident Claims</h4>
-        <p>Compensation claims before Motor Accident Claims Tribunals.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-corporate"/></svg></div>
-        <h4>Corporate</h4>
-        <p>Governance, compliance and dispute resolution for businesses.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-contracts"/></svg></div>
-        <h4>Contracts</h4>
-        <p>Drafting, vetting and enforcement of commercial agreements.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-conveyance"/></svg></div>
-        <h4>Legal Documentation &amp; Conveyancing</h4>
-        <p>Property transfer, title verification and deed drafting.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-family"/></svg></div>
-        <h4>Family Matters</h4>
-        <p>Divorce, custody and maintenance handled with sensitivity.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-consumer"/></svg></div>
-        <h4>Consumer Cases</h4>
-        <p>Representation before Consumer Disputes Redressal Commissions.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-msme"/></svg></div>
-        <h4>MSME Services</h4>
-        <p>Legal support for registration, compliance and disputes.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-debt"/></svg></div>
-        <h4>Debt Recovery</h4>
-        <p>Recovery proceedings and enforcement of outstanding dues.</p>
-      </div>
-      <div class="p-card">
-        <div class="icon-wrap"><svg><use href="#icon-tax"/></svg></div>
-        <h4>Income Tax</h4>
-        <p>Advisory and representation in income tax matters and appeals.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============== STATUTES REGISTER ============== -->
-<section class="section statutes">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Legal Framework</span>
-      <h2>Statutes we navigate daily.</h2>
-      <p>Deep, current knowledge of the legislation governing technology, data and digital conduct in India.</p>
-    </div>
-    <div class="register reveal">
-      <div class="reg-item"><span class="reg-tag">IT</span><span class="act">Information Technology Act, 2000</span></div>
-      <div class="reg-item"><span class="reg-tag">DPDP</span><span class="act">Digital Personal Data Protection Act, 2023</span></div>
-      <div class="reg-item"><span class="reg-tag">IPC</span><span class="act">Indian Penal Code — Cyber Offence Provisions</span></div>
-      <div class="reg-item"><span class="reg-tag">CPA</span><span class="act">Consumer Protection Act — E-Commerce Rules</span></div>
-      <div class="reg-item"><span class="reg-tag">IPR</span><span class="act">Intellectual Property Rights — Digital Enforcement</span></div>
-      <div class="reg-item"><span class="reg-tag">INTL</span><span class="act">International Cyber Law Frameworks</span></div>
-      <div class="reg-item"><span class="reg-tag">RBI</span><span class="act">Banking Regulation — Digital Payments</span></div>
-      <div class="reg-item"><span class="reg-tag">TEL</span><span class="act">Telecommunications &amp; Digital Law</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== WHY CHOOSE ============== -->
-<section class="section why" id="why">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why Padwal &amp; Associates</span>
-      <h2>Counsel you can rely on.</h2>
-    </div>
-    <div class="why-grid reveal">
-      <div class="why-item">
-        <span class="why-num">A</span>
-        <div><h4>Dual Expertise</h4><p>Equally at ease in courtroom litigation and emerging cyber law, giving clients one firm for both traditional and digital matters.</p></div>
-      </div>
-      <div class="why-item">
-        <span class="why-num">B</span>
-        <div><h4>Proven Diligence</h4><p>Meticulous case preparation and a consistent track record across civil, criminal and cyber proceedings.</p></div>
-      </div>
-      <div class="why-item">
-        <span class="why-num">C</span>
-        <div><h4>Current &amp; Compliant</h4><p>Continuously updated on evolving legislation, including the DPDP Act 2023 and IT Act amendments.</p></div>
-      </div>
-      <div class="why-item">
-        <span class="why-num">D</span>
-        <div><h4>Accessible Counsel</h4><p>Direct access to your advocate, transparent communication and pragmatic, preventive advice.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============== CONTACT ============== -->
-<section class="section contact" id="contact">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Get in Touch</span>
-      <h2>Schedule a consultation.</h2>
-      <p>Tell us briefly about your matter and we'll get back to you to arrange a consultation.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info-card reveal">
-        <h3>Padwal &amp; Associates</h3>
-        <p>Advocates &amp; Cyber Law Specialists</p>
-
-        <div class="cinfo-row">
-          <div class="ic"><svg><use href="#icon-phone"/></svg></div>
-          <div><div class="label">Phone</div><div class="val"><a href="tel:+919921744777">+91 99217 44777</a></div></div>
+      <div class="cyber-grid reveal">
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </div>
+          <h4>DPDP Act, 2023 Compliance</h4>
+          <p>Data mapping, consent architecture, and grievance-redressal frameworks aligned to India's data protection law.</p>
         </div>
-        <div class="cinfo-row">
-          <div class="ic"><svg><use href="#icon-mail"/></svg></div>
-          <div><div class="label">Email</div><div class="val"><a href="mailto:advshantanupadwal@gmail.com">advshantanupadwal@gmail.com</a></div></div>
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="M9.5 12.5 11 14l3.5-3.5"/></svg>
+          </div>
+          <h4>Cybercrime Litigation</h4>
+          <p>Representation in hacking, online fraud, identity theft, and digital harassment matters before cyber cells and courts.</p>
         </div>
-        <div class="cinfo-row">
-          <div class="ic"><svg><use href="#icon-clock"/></svg></div>
-          <div><div class="label">Office Hours</div><div class="val">Mon – Fri: 9:00 AM – 6:00 PM<small>Sat: 10:00 AM – 2:00 PM · Sun: By appointment</small></div></div>
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/><path d="m9 9 6 6m0-6-6 6" stroke-width="1.3" opacity=".8"/></svg>
+          </div>
+          <h4>Data Breach Response</h4>
+          <p>Time-critical legal support for breach containment, regulatory notification, and client communication.</p>
         </div>
-        <div class="cinfo-row">
-          <div class="ic"><svg><use href="#icon-pin"/></svg></div>
-          <div><div class="label">Office</div><div class="val">Maharashtra, India<small>Pan-India consultations available online</small></div></div>
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+          </div>
+          <h4>IT Act, 2000 Advisory</h4>
+          <p>Compliance counsel on intermediary liability, electronic records, digital signatures, and IT Act obligations.</p>
+        </div>
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/><path d="M4 13h16"/></svg>
+          </div>
+          <h4>Corporate Cybersecurity Counsel</h4>
+          <p>Incident-response planning, vendor security contracts, and board-level advisory on cyber risk.</p>
+        </div>
+        <div class="cyber-card">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4h9l3 3v13H6z"/><path d="M15 4v3h3"/><path d="M9 12h6M9 15h6M9 9h2"/></svg>
+          </div>
+          <h4>Privacy Policy &amp; Platform Documentation</h4>
+          <p>Drafting of privacy policies, terms of use, and data-processing agreements for digital platforms.</p>
         </div>
       </div>
 
-      <!--
-        FORM NOTE FOR ADV. PADWAL:
-        This form uses FormSubmit.co — a free service that emails submissions
-        directly to you, with no backend or signup required (works on GitHub Pages).
-        The FIRST submission will send a confirmation email to
-        advshantanupadwal@gmail.com — open it and click "Confirm" to activate.
-        To change the destination email, edit the form's "action" attribute below.
-      -->
-      <form class="form-card reveal" action="https://formsubmit.co/advshantanupadwal@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Consultation Request — Padwal & Associates website">
-        <input type="hidden" name="_captcha" value="false">
+      <div class="cyber-foot reveal">
+        <a href="#contact" class="btn btn-signal">Discuss a Cyber Law Matter</a>
+        <p>IT Act, 2000 · DPDP Act, 2023 · BNS Cyber Provisions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRACTICE AREAS ============ -->
+  <section class="practice-section" id="practice">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Full-Service Practice</div>
+        <h2>Beyond Cyber Law — Counsel Across Civil Life and Business</h2>
+        <p>Padwal &amp; Associates represents clients across the full span of Indian civil, criminal, and commercial law, with the same rigour brought to every cyber law matter.</p>
+      </div>
+
+      <div class="practice-grid reveal">
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 8l-3 6a3.5 3.5 0 0 0 7 0zM19 8l-3 6a3.5 3.5 0 0 0 7 0zM5 8l7-3 7 3M4 21h16"/></svg></div>
+            <span class="pc-num">§ 01</span>
+          </div>
+          <h4>Civil Litigation</h4>
+          <p>Property disputes, civil suits, injunctions, and recovery matters before civil courts.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h9l5 5v11H5z"/><path d="M14 4v5h5M9 13h6M9 16h6"/></svg></div>
+            <span class="pc-num">§ 02</span>
+          </div>
+          <h4>Criminal Defence</h4>
+          <p>Defence and prosecution under the Bharatiya Nyaya Sanhita, BNSS, and allied criminal statutes — from bail to trial.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="5"/><path d="M9.5 17h5L13 21h-2z"/><path d="M10 9h4M12 7v4"/></svg></div>
+            <span class="pc-num">§ 03</span>
+          </div>
+          <h4>Intellectual Property Rights</h4>
+          <p>Trademark, copyright, and patent registration, enforcement, and infringement litigation.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="11" width="18" height="6" rx="1.5"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/><path d="M5 11l1.5-4.5h11L19 11"/></svg></div>
+            <span class="pc-num">§ 04</span>
+          </div>
+          <h4>Motor Accident Claims</h4>
+          <p>Compensation claims before the Motor Accident Claims Tribunal for victims and their families.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6M9 13h.01M15 13h.01M12 13h.01M9 10h.01M15 10h.01"/></svg></div>
+            <span class="pc-num">§ 05</span>
+          </div>
+          <h4>Corporate Law</h4>
+          <p>Entity structuring, governance, regulatory compliance, and commercial advisory for companies and startups.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="m9 17 2-2 6-6 2 2-6 6-2 2z"/></svg></div>
+            <span class="pc-num">§ 06</span>
+          </div>
+          <h4>Contracts &amp; Commercial Agreements</h4>
+          <p>Drafting, vetting, and negotiation of commercial contracts, NDAs, and vendor agreements.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h12l4 4v12H4z"/><path d="M16 4v4h4"/><circle cx="9" cy="14" r="2"/><path d="m13 18-2-2"/></svg></div>
+            <span class="pc-num">§ 07</span>
+          </div>
+          <h4>Legal Documentation &amp; Conveyancing</h4>
+          <p>Sale deeds, lease agreements, wills, power of attorney, and property title due diligence.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 21V12h6v9"/><path d="M3 11 12 4l9 7"/><path d="M19 11v10"/></svg></div>
+            <span class="pc-num">§ 08</span>
+          </div>
+          <h4>Family Matters</h4>
+          <p>Divorce, maintenance, custody, and matrimonial disputes handled with discretion and care.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="M9 12h6"/></svg></div>
+            <span class="pc-num">§ 09</span>
+          </div>
+          <h4>Consumer Cases</h4>
+          <p>Representation before Consumer Disputes Redressal Commissions for deficient goods and services.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"/><path d="M5 21V10l4-2v13M11 21V7l4-2v16M17 21v-9l3-1v10"/></svg></div>
+            <span class="pc-num">§ 10</span>
+          </div>
+          <h4>MSME Services</h4>
+          <p>Udyam registration, delayed-payment recovery under the MSME Act, and ongoing compliance support.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5" fill="none"/><path d="M9 7v4M7 9h4"/></svg></div>
+            <span class="pc-num">§ 11</span>
+          </div>
+          <h4>Debt Recovery</h4>
+          <p>Recovery proceedings before DRTs and civil courts, and through arbitration and negotiated settlement.</p>
+        </div>
+
+        <div class="practice-card">
+          <div class="pc-top">
+            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 14h6M9 17h4"/><circle cx="10.5" cy="10.5" r="1.5"/></svg></div>
+            <span class="pc-num">§ 12</span>
+          </div>
+          <h4>Income Tax Matters</h4>
+          <p>Assessment representation, appeals, and advisory before income tax authorities and appellate tribunals.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="portrait-frame reveal">
+        <!-- Replace this block with: <img src="assets/shantanu-padwal.jpg" alt="Adv. Shantanu Padwal"> -->
+        <span class="frame-monogram">SP</span>
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner br"></span>
+      </div>
+
+      <div class="about-copy reveal">
+        <div class="eyebrow">About the Firm</div>
+        <h2>Adv. Shantanu Padwal</h2>
+        <span class="about-role">Founder &amp; Principal Advocate</span>
+        <p>Adv. Shantanu Padwal founded Padwal &amp; Associates to bring together two disciplines that rarely sit under one roof: the discipline of traditional courtroom practice, and the specialised knowledge required to litigate and advise on matters of cyber law. The firm advises clients ranging from individuals to growing businesses across Maharashtra.</p>
+        <p>His cyber law practice covers compliance under the Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000, cybercrime litigation, and data breach response — a specialisation that places the firm at the forefront of India's evolving digital legal landscape, alongside a full general practice spanning civil, criminal, corporate, and family law.</p>
+        <div class="badge-row">
+          <span class="badge">Cyber Law Specialist</span>
+          <span class="badge">Data Protection Advisory</span>
+          <span class="badge">Cybercrime Litigation</span>
+          <span class="badge">Compliance Counsel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Why Padwal &amp; Associates</div>
+        <h2>Trusted Counsel, Built for the Digital Age</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <div class="why-num">01</div>
+          <h4>Specialist Depth in Cyber Law</h4>
+          <p>Rare among general practitioners — hands-on expertise in India's newest and most technical area of law.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">02</div>
+          <h4>Full-Service Coverage</h4>
+          <p>One firm for civil, criminal, corporate, family, and digital matters — no need to coordinate multiple counsel.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">03</div>
+          <h4>Current on the Law</h4>
+          <p>Practice kept current with fast-moving statutes, from the DPDP Act, 2023 to the Bharatiya Nyaya Sanhita.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-num">04</div>
+          <h4>Direct Access to Counsel</h4>
+          <p>Clients work directly with Adv. Padwal, with personal attention given to every matter the firm takes on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="eyebrow on-dark">Get in Touch</div>
+        <h2>Schedule a Consultation</h2>
+        <p>Reach out to discuss your matter in confidence. Cyber law enquiries, in particular, are best raised early — the firm prioritises time-critical cyber and data breach matters.</p>
+
+        <div class="info-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2z"/></svg></div>
+          <div>
+            <h5>Phone</h5>
+            <a href="tel:+919921744777">+91 99217 44777</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg></div>
+          <div>
+            <h5>Email</h5>
+            <a href="mailto:advshantanupadwal@gmail.com">advshantanupadwal@gmail.com</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <div>
+            <h5>Office Hours</h5>
+            <p class="value">Mon–Fri: 9:00 AM–6:00 PM</p>
+            <p class="sub">Sat: 10:00 AM–2:00 PM · Sun: By appointment only</p>
+          </div>
+        </div>
+
+        <a class="whatsapp-link" href="https://wa.me/919921744777" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.7 14.2c-.2.6-1.4 1.2-2 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.6.8 2 .9 2.1.1.2.1.4 0 .6-.1.2-.1.3-.3.5l-.4.5c-.1.2-.3.3-.1.6.2.3.9 1.5 2 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <form class="contact-form reveal" action="https://formsubmit.co/advshantanupadwal@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry — Padwal & Associates website">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+
         <div class="form-row">
           <div class="field">
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="Name" required>
+            <input type="text" id="fname" name="Name" required placeholder="Your full name">
           </div>
           <div class="field">
-            <label for="fphone">Phone Number</label>
-            <input type="tel" id="fphone" name="Phone" required>
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" name="Email" required placeholder="you@example.com">
           </div>
         </div>
-        <div class="field">
-          <label for="femail">Email Address</label>
-          <input type="email" id="femail" name="Email" required>
+        <div class="form-row">
+          <div class="field">
+            <label for="fphone">Phone Number</label>
+            <input type="tel" id="fphone" name="Phone" required placeholder="+91 ">
+          </div>
+          <div class="field">
+            <label for="fsubject">Matter Type</label>
+            <select id="fsubject" name="Matter Type" required>
+              <option value="" disabled selected>Select a practice area</option>
+              <optgroup label="Cyber Law">
+                <option>DPDP Act, 2023 Compliance</option>
+                <option>Cybercrime Litigation</option>
+                <option>Data Breach Response</option>
+                <option>IT Act, 2000 Advisory</option>
+                <option>Corporate Cybersecurity Counsel</option>
+                <option>Privacy Policy &amp; Platform Documentation</option>
+              </optgroup>
+              <optgroup label="General Practice">
+                <option>Civil Litigation</option>
+                <option>Criminal Defence</option>
+                <option>Intellectual Property Rights</option>
+                <option>Motor Accident Claims</option>
+                <option>Corporate Law</option>
+                <option>Contracts &amp; Commercial Agreements</option>
+                <option>Legal Documentation &amp; Conveyancing</option>
+                <option>Family Matters</option>
+                <option>Consumer Cases</option>
+                <option>MSME Services</option>
+                <option>Debt Recovery</option>
+                <option>Income Tax Matters</option>
+              </optgroup>
+              <option>General Enquiry</option>
+            </select>
+          </div>
         </div>
-        <div class="field">
-          <label for="fsubject">Practice Area</label>
-          <select id="fsubject" name="Practice Area">
-            <option>Cyber Law &amp; Data Security</option>
-            <option>Civil</option>
-            <option>Criminal</option>
-            <option>IPR</option>
-            <option>Motor Accident Claims</option>
-            <option>Corporate</option>
-            <option>Contracts</option>
-            <option>Legal Documentation &amp; Conveyancing</option>
-            <option>Family Matters</option>
-            <option>Consumer Cases</option>
-            <option>MSME Services</option>
-            <option>Debt Recovery</option>
-            <option>Income Tax</option>
-            <option>General Inquiry</option>
-          </select>
-        </div>
-        <div class="field">
+        <div class="field full" style="margin-bottom:22px;">
           <label for="fmessage">Message</label>
-          <textarea id="fmessage" name="Message" required></textarea>
+          <textarea id="fmessage" name="Message" required placeholder="Briefly describe your matter"></textarea>
         </div>
         <div class="form-foot">
-          <small>By submitting, you acknowledge this does not create an advocate-client relationship.</small>
-          <button type="submit" class="btn btn-gold">Send Message</button>
+          <p class="form-note">By submitting, you agree this does not create an advocate-client relationship until confirmed.</p>
+          <button type="submit" class="btn btn-brass">Send Message</button>
         </div>
       </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============== FOOTER ============== -->
+</main>
+
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="brand">
-          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-            <circle cx="20" cy="20" r="18.5" fill="none" stroke="#B68D40" stroke-width="1.2"/>
-            <circle cx="20" cy="20" r="14.5" fill="none" stroke="#1FB8A6" stroke-width="0.8" stroke-dasharray="2 3"/>
-            <text x="20" y="25.5" font-family="Fraunces, Georgia, serif" font-size="13" fill="#D9B872" text-anchor="middle">P&amp;A</text>
-          </svg>
-          <span class="brand-text"><span class="name" style="color:#fff;">Padwal &amp; Associates</span></span>
-        </a>
-        <p>Advocates &amp; Cyber Law Specialists providing full-spectrum legal counsel — from courtroom litigation to digital-age compliance.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#practice">Practice Areas</a></li>
-          <li><a href="#cyber">Cyber Law</a></li>
-          <li><a href="#why">Why Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Practice Areas</h5>
-        <ul>
-          <li><a href="#cyber">Cyber Law &amp; Data Security</a></li>
-          <li><a href="#practice">Civil &amp; Criminal</a></li>
-          <li><a href="#practice">Family Matters</a></li>
-          <li><a href="#practice">Corporate &amp; MSME</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="tel:+919921744777">+91 99217 44777</a></li>
-          <li><a href="mailto:advshantanupadwal@gmail.com">advshantanupadwal@gmail.com</a></li>
-          <li><a href="#contact">Schedule a Consultation</a></li>
-        </ul>
-      </div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <svg class="brand-seal" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="#B8893E" stroke-width="1.2"/>
+          <path d="M24 12 L32 16 L32 25 Q32 33 24 37 Q16 33 16 25 L16 16 Z" fill="#0A1628" stroke="#B8893E" stroke-width="1"/>
+          <rect x="20.2" y="24.5" width="7.6" height="6.4" rx="1" fill="#1FA39A"/>
+          <path d="M21.5 24.5 V21.8 a2.5 2.5 0 0 1 5 0 V24.5" stroke="#1FA39A" stroke-width="1.3" fill="none"/>
+        </svg>
+        <span class="brand-text">
+          <span class="firm-name" style="display:block;">Padwal &amp; Associates</span>
+        </span>
+      </a>
+      <p>A full-service law firm led by cyber law specialist Adv. Shantanu Padwal, serving clients across Maharashtra and pan-India.</p>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Padwal &amp; Associates. All rights reserved.</span>
-      <span>Advocates are not permitted to advertise under the Bar Council of India Rules — this website is for informational purposes only.</span>
+
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cyber">Cyber Law</a></li>
+        <li><a href="#practice">Practice Areas</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+
+    <div>
+      <h5>Cyber Law</h5>
+      <ul>
+        <li><a href="#cyber">DPDP Act Compliance</a></li>
+        <li><a href="#cyber">Cybercrime Litigation</a></li>
+        <li><a href="#cyber">Data Breach Response</a></li>
+        <li><a href="#cyber">IT Act Advisory</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+919921744777">+91 99217 44777</a></li>
+        <li><a href="mailto:advshantanupadwal@gmail.com">advshantanupadwal@gmail.com</a></li>
+        <li><a href="https://wa.me/919921744777" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Padwal &amp; Associates. All rights reserved.</p>
+    <p class="bci">This website is for informational purposes only and does not constitute legal advice or advertisement/solicitation under the Bar Council of India Rules.</p>
   </div>
 </footer>
 
 <script>
-(function(){
-  // Header scroll state
-  var header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', function(){
-    header.classList.toggle('scrolled', window.scrollY > 30);
-  });
-
-  // Mobile menu
-  var burger = document.getElementById('burgerBtn');
-  var menu = document.getElementById('mobileMenu');
-  burger.addEventListener('click', function(){
-    var open = menu.classList.toggle('open');
-    burger.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      menu.classList.remove('open');
-      burger.classList.remove('open');
+  // Disclaimer modal (BCI compliance gate). Wrapped in try/catch so that if
+  // sessionStorage is unavailable (privacy mode, some embedded browsers),
+  // the worst case is the disclaimer re-appearing each visit — never a
+  // broken or stuck page.
+  try{
+    var overlay = document.getElementById('disclaimerOverlay');
+    var agreed = null;
+    try{ agreed = sessionStorage.getItem('padwalDisclaimerAgreed'); }catch(e){}
+    if(agreed === 'yes'){
+      overlay.style.display = 'none';
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+    document.getElementById('agreeBtn').addEventListener('click', function(){
+      try{ sessionStorage.setItem('padwalDisclaimerAgreed','yes'); }catch(e){}
+      overlay.style.display = 'none';
       document.body.style.overflow = '';
     });
-  });
-
-  // Disclaimer modal (Bar Council of India compliance)
-  var overlay = document.getElementById('disclaimerOverlay');
-  var agreeBtn = document.getElementById('disclaimerAgree');
-  try {
-    if (sessionStorage.getItem('padwal_disclaimer_ack') === '1') {
-      overlay.classList.add('hidden');
-    }
-  } catch(e) {}
-  agreeBtn.addEventListener('click', function(){
-    overlay.classList.add('hidden');
-    try { sessionStorage.setItem('padwal_disclaimer_ack', '1'); } catch(e) {}
-  });
-
-  // Scroll reveal
-  var reveals = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add('in'); });
+  }catch(e){
+    var ov = document.getElementById('disclaimerOverlay');
+    if(ov) ov.style.display = 'none';
   }
-})();
+
+  // Mobile nav toggle
+  try{
+    var btn = document.getElementById('hamburgerBtn');
+    var nav = document.getElementById('mainNav');
+    var scrim = document.getElementById('navScrim');
+    function closeNav(){
+      nav.classList.remove('open');
+      btn.classList.remove('open');
+      scrim.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+    function toggleNav(){
+      var isOpen = nav.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      scrim.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+    btn.addEventListener('click', toggleNav);
+    scrim.addEventListener('click', closeNav);
+    nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeNav); });
+  }catch(e){}
+
+  // Scroll reveal — progressive enhancement only. Elements stay fully
+  // visible (see CSS) unless this code runs successfully and opts them
+  // into the animated state.
+  try{
+    if('IntersectionObserver' in window){
+      var items = document.querySelectorAll('.reveal');
+      items.forEach(function(el){ el.classList.add('reveal-pre'); });
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function(el){ io.observe(el); });
+    }
+  }catch(e){}
+
+  // Footer year
+  try{
+    document.getElementById('year').textContent = new Date().getFullYear();
+  }catch(e){}
 </script>
+
 </body>
 </html>
